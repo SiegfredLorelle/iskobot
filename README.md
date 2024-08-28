@@ -1,5 +1,9 @@
 # iskobot-rag-system
 
+## TODOs
+- add rag chatbot implementation for pdfs
+- improve ui design
+
 ## Steamlit Application Setup
 1. Set up Ollama to pull open-source models by reading their git repository's [README](https://github.com/ollama/ollama?tab=readme-ov-file) file.
 2. Clone this GitHub repository
