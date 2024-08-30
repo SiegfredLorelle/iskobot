@@ -1,9 +1,8 @@
 # iskobot-rag-system
 
 ## TODOs
-
-- add rag chatbot implementation for pdfs
 - improve ui design
+- add chat history for more context
 
 ## Steamlit Application Setup
 
