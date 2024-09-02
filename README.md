@@ -1,8 +1,8 @@
 # iskobot-rag-system
 
 ## TODOs
+
 - improve ui design
-- add chat history for more context
 
 ## Steamlit Application Setup
 
