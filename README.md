@@ -2,7 +2,6 @@
 
 ## TODOs
 
-- add rag chatbot implementation for pdfs
 - improve ui design
 
 ## Steamlit Application Setup
