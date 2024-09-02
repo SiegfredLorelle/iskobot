@@ -3,6 +3,7 @@
 ## TODOs
 
 - improve ui design
+- integrate groq api
 
 ## Steamlit Application Setup
 
