@@ -18,6 +18,8 @@ llm = Ollama(model="llama3.1:8b")  # Specify model here
 # Streamlit UI
 st.title("Iskobot")
 
+st.write("---")
+
 # Load PDF and prepare documents for retrieval
 pdf_loader = PDFPlumberLoader("../pdfs/Studying-101.pdf")
 pages = pdf_loader.load_and_split()
@@ -46,6 +48,16 @@ qa_chain = RetrievalQA.from_chain_type(
     chain_type_kwargs={"prompt": QA_CHAIN_PROMPT}
 )
 
+# Initialize session state for chat history if not already done
+if 'chat_history' not in st.session_state:
+    st.session_state.chat_history = []
+
+# Display the entire chat history (excluding the latest, already shown)
+for chat in st.session_state.chat_history[:-1]:
+    st.write(f"**You:** {chat['question']}")
+    st.write(f"**Iskobot:** {chat['answer']}")
+    st.write("---")
+
 # Streamlit input and button
 prompt = st.text_area(label="Message Iskobot", label_visibility="hidden", placeholder="Message Iskobot")
 
@@ -55,5 +67,9 @@ if st.button("Ask"):
         with st.spinner("Answering your question..."):
             # Use the retrieval QA chain to get an answer
             result = qa_chain({"query": prompt})
-            st.write(result['result'])
+            # Save the question and answer to session state
+            st.session_state.chat_history.append({"question": prompt, "answer": result['result']})
+            # Display the answer
+            st.write(f"**You:** {prompt}")
+            st.write(f"**Iskobot:** {result['result']}")
             st.write("Thanks for asking!")
