@@ -4,6 +4,7 @@
 
 - improve ui design
 - integrate groq api
+- use LlamaIndex for RAG component
 
 ## Steamlit Application Setup
 
@@ -15,10 +16,11 @@
 
 ## Acknowledgements
 
-This project used these pdfs for trial and testing of the RAG framework:
+PDFs:
 
-1. https://learningcenter.unc.edu/wp-content/uploads/sites/330/2018/03/Studying-101.pdf
+- https://learningcenter.unc.edu/wp-content/uploads/sites/330/2018/03/Studying-101.pdf
 
-This project uses components from the following repositories:
+Notebooks:
 
-- **[ApplicationsBuildWithLLMs](https://github.com/karndeepsingh/ApplicationsBuildWithLLMs)** by [karndeepsingh](https://github.com/karndeepsingh): Used pdf RAG component.
+- https://github.com/karndeepsingh/ApplicationsBuildWithLLMs/blob/main/Langchain_With_Gemini_And_Build_RAG.ipynb
+- https://colab.research.google.com/github/jerryjliu/llama_index/blob/main/docs/docs/examples/llm/groq.ipynb
