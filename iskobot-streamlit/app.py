@@ -13,7 +13,7 @@ from langchain_community.llms import Ollama
 from langchain_ollama import OllamaEmbeddings
 
 # Initialize the model
-llm = Ollama(model="llama3.1:8b")  # Specify model here
+llm = Ollama(model="llama3.1:8b", temperature=0.7, top_p=0.95) # Specify model here
 
 # Streamlit UI
 st.title("Iskobot")
@@ -34,7 +34,7 @@ embeddings = OllamaEmbeddings(model='jina/jina-embeddings-v2-base-en',) # Specif
 vector_index = Chroma.from_texts(texts, embeddings).as_retriever(search_kwargs={"k": 5})
 
 # Define the prompt template for the retrieval QA chain
-template = """You are Iskobot, a chatbot designed to assist students with their general and academic questions. Use the context provided to answer the question below. If you don't know the answer, clearly state that you don't know, and avoid guessing. Provide a concise response and include "Thanks for asking!" at the end of your answer.
+template = """You are Iskobot, a chatbot designed to assist students with their general and academic questions. Use the context provided to answer the question below. If you don't know the answer, clearly state that you don't know, and avoid guessing. Provide a concise response and include "Thanks for asking!" at the end of your answer. Think carefully.
 {context}
 Question: {question}
 Answer:"""
