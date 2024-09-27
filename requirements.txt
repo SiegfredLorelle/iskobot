@@ -11,4 +11,3 @@ langchain_ollama
 groq==0.11
 python-dotenv
 pypdf
-pysqlite3-binary
