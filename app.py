@@ -82,7 +82,7 @@ if st.button("Ask"):
 
             # Send the prompt to Groq's API
             completion = client.chat.completions.create(
-                model="llama-3.2-90b-text-preview",
+                model="llama-3.2-90b-vision-preview",
                 messages=[{
                     "role": "user",
                     "content": groq_prompt
