@@ -1,4 +1,5 @@
-# iskobot-rag-system
+# iskobot
+>Chatbot designed to assist students
 
 ## TODOs
 

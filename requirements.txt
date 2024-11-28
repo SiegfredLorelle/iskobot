@@ -1,13 +1,14 @@
-streamlit
+streamlit==1.38
 langchain
 pandas
 PyPDF2
 pdfplumber
-chromadb
+chromadb==0.5
 jinja2
 pydantic
 langchain-community
 langchain_ollama
-groq
+groq==0.11
 python-dotenv
 pypdf
+pysqlite3-binary
