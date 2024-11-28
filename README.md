@@ -8,7 +8,10 @@
 - use LlamaIndex for RAG component
 
 ## Steamlit Application Setup
+### Test Online
+1. [Streamlit Link](https://kvejnx2garxngp4cbz8x8f.streamlit.app/)
 
+### Test Locally
 1. Set up Ollama to pull open-source models by reading their git repository's [README](https://github.com/ollama/ollama?tab=readme-ov-file) file.
 2. Clone this GitHub repository
 3. cd iskobot-streamlit
