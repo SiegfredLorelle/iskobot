@@ -3,9 +3,11 @@
 
 ## TODOs
 
-- improve ui design
-- integrate groq api
-- use LlamaIndex for RAG component
+- add audio input UI
+- notebook for using whisper
+- test whisper integration
+- notebook tts model, stt model, rag-llm combined
+- notebook naive rag using llama index
 
 ## Steamlit Application Setup
 ### Test Online
