@@ -2,7 +2,7 @@
 >Chatbot designed to assist students
 
 ## TODOs
-
+- testing gtts ni Google
 - add audio input UI
 - notebook for using whisper
 - test whisper integration
