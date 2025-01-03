@@ -12,3 +12,4 @@ groq==0.11
 python-dotenv
 pypdf
 pysqlite3-binary
+numpy<2.0.0
